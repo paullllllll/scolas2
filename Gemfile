@@ -44,10 +44,10 @@ group :production do
 	gem 'rails_12factor'	
 end
 
-group :development, :test do
+#group :development, :test do
 	# Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
+ # gem 'sqlite3'
+#end
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
@@ -66,3 +66,5 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+gem 'mysql2', '~> 0.3.11'
